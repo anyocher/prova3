@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+:root {
+    --cor1: #0056b3;
+    --cor2: #c7c7c7;
+    --cor3: #ffffff;
+    --cor5: #8b99ac;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cor2);
+    color: var(--cor1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header,
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--cor1);
+    color: var(--cor2);
+    min-height: 8vh;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+h1 {
+    width: 100%;
+    text-align: center;
+}
+
+nav button {
+    background-color: var(--cor1);
+    color: var(--cor3);
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 55px;
+}
+
+nav button:hover {
+    background-color: var(--cor1);
+    color: var(--cor3);
+    box-shadow: 0 0 5px var(--cor3);
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+}
+
+table {
+    width: 80%;
+    height: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+tfoot td{
+    max-height: 5vh;
+}
+
+input,
+select {
+    width: 100%;
+    max-width: 300px;
+    padding: 5px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+}
+
+.saldos {
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 20px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form button {
+    background-color: var(--cor1);
+    color: var(--cor3);
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+#entradas,
+#saidas {
+    height: 100%;
+    max-height: 65vh;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: flex-start;
+    margin: 10px;
+    padding: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.card {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: var(--cor3);
+    color: var(--cor1);
+    box-shadow: 0 0 5px var(--cor1);
+}
+
+.areas {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: space-around;
+}
+
+.areas button {
+    background-color: var(--cor5);
+    color: var(--cor3);
+    border: none;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.areas button:hover {
+    background-color: var(--cor4);
+    color: var(--cor3);
+    box-shadow: 0 0 5px var(--cor4);
+}
+
+.aqui {
+    font-size: 16px;
+      font-weight: bold;
+      margin-bottom: 8px;
+      display: block;
+      width: 100%;
+      padding: 8px;
+      font-size: 14px;
+      margin-top: 4px;
+      border: 2px;
+}
+
+.botao-azul {
+    background-color: #007bff; /* Cor de fundo azul */
+    color: white; /* Cor do texto */
+    border: none; /* Remove borda */
+    border-radius: 55px; /* Bordas arredondadas */
+    padding: 12px 25px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: 600; /* Peso da fonte */
+    cursor: pointer; /* Muda o cursor para uma mãozinha ao passar por cima */
+    transition: all 0.3s ease; /* Animação suave nas transições */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombras para dar um efeito de profundidade */
+  }
+  
+  /* Efeito de hover (passando o mouse sobre o botão) */
+  .botao-azul:hover {
+    background-color: #0056b3; /* Cor mais escura quando o mouse passa por cima */
+    transform: translateY(-2px); /* Leve efeito de elevação */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombras mais fortes no hover */
+  }
